@@ -192,57 +192,55 @@ export function DataTable({ data, title, description }: DataTableProps) {
                   <Calendar className="h-5 w-5 text-accent" />
                 </button>
                 {showDatePicker && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center md:absolute md:inset-auto md:mt-2 md:left-0 bg-black/30 md:bg-transparent">
-                    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-2 w-[90vw] max-w-xs md:max-w-md">
-                      <DateRange
-                        ranges={[{
-                          startDate: dateRange.startDate || new Date(),
-                          endDate: dateRange.endDate || new Date(),
-                          key: 'selection',
-                        }]}
-                        onChange={(item: any) => {
-                          setDateRange(item.selection);
-                          setDateActive(true);
-                          setShowDatePicker(false); // Close popup after selection
-                        }}
-                        maxDate={new Date()}
-                        showDateDisplay={false}
-                        rangeColors={["#F64C67"]}
-                        dayContentRenderer={(date: Date) => {
-                          const iso = date.toISOString().slice(0, 10);
-                          return (
-                            <div style={{ position: 'relative' }}>
-                              {date.getDate()}
-                              {dataDates.has(iso) && (
-                                <span
-                                  style={{
-                                    position: 'absolute',
-                                    bottom: 2,
-                                    left: '50%',
-                                    transform: 'translateX(-50%)',
-                                    width: 6,
-                                    height: 6,
-                                    borderRadius: '50%',
-                                    background: '#F64C67',
-                                    display: 'inline-block',
-                                  }}
-                                />
-                              )}
-                            </div>
-                          );
-                        }}
-                      />
-                      <button
-                        className="mt-2 w-full py-2 rounded bg-accent text-accent-foreground text-sm font-semibold hover:bg-accent/80 transition"
-                        onClick={() => {
-                          setDateRange({ startDate: null, endDate: null, key: 'selection' });
-                          setDateActive(false);
-                          setShowDatePicker(false);
-                        }}
-                      >
-                        Clear Date Filter
-                      </button>
-                    </div>
+                  <div className="absolute z-50 mt-2 left-0 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-border p-2 w-80 max-w-[90vw]">
+                    <DateRange
+                      ranges={[{
+                        startDate: dateRange.startDate || new Date(),
+                        endDate: dateRange.endDate || new Date(),
+                        key: 'selection',
+                      }]}
+                      onChange={(item: any) => {
+                        setDateRange(item.selection);
+                        setDateActive(true);
+                        setShowDatePicker(false); // Close popup after selection
+                      }}
+                      maxDate={new Date()}
+                      showDateDisplay={false}
+                      rangeColors={["#F64C67"]}
+                      dayContentRenderer={(date: Date) => {
+                        const iso = date.toISOString().slice(0, 10);
+                        return (
+                          <div style={{ position: 'relative' }}>
+                            {date.getDate()}
+                            {dataDates.has(iso) && (
+                              <span
+                                style={{
+                                  position: 'absolute',
+                                  bottom: 2,
+                                  left: '50%',
+                                  transform: 'translateX(-50%)',
+                                  width: 6,
+                                  height: 6,
+                                  borderRadius: '50%',
+                                  background: '#F64C67',
+                                  display: 'inline-block',
+                                }}
+                              />
+                            )}
+                          </div>
+                        );
+                      }}
+                    />
+                    <button
+                      className="mt-2 w-full py-2 rounded bg-accent text-accent-foreground text-sm font-semibold hover:bg-accent/80 transition"
+                      onClick={() => {
+                        setDateRange({ startDate: null, endDate: null, key: 'selection' });
+                        setDateActive(false);
+                        setShowDatePicker(false);
+                      }}
+                    >
+                      Clear Date Filter
+                    </button>
                   </div>
                 )}
               </div>
@@ -407,6 +405,6 @@ export function DataTable({ data, title, description }: DataTableProps) {
           </div>
         </CardContent>
       </Card>
-    </motion.div>
+    </motion.div >
   );
 }
