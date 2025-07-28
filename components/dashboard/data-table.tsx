@@ -203,6 +203,7 @@ export function DataTable({ data, title, description }: DataTableProps) {
                         onChange={(item: any) => {
                           setDateRange(item.selection);
                           setDateActive(true);
+                          setShowDatePicker(false); // Close popup after selection
                         }}
                         maxDate={new Date()}
                         showDateDisplay={false}
