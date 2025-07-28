@@ -45,16 +45,16 @@ export function MetricCard({ metric, index }: MetricCardProps) {
             <div>
               <div className="text-2xl font-bold tracking-tight text-accent">{metric.value}</div>
               <div className="flex items-center space-x-1 text-xs">
-                <ChangeIcon
+                <ChangeIcon 
                   className={`h-3 w-3 ${metric.changeType === 'increase'
                     ? 'text-accent'
-                    : 'text-orange-500'
-                    }`}
+                      : 'text-orange-500'
+                  }`} 
                 />
                 <span className={`${metric.changeType === 'increase'
                   ? 'text-accent'
-                  : 'text-orange-500'
-                  }`}>
+                    : 'text-orange-500'
+                }`}>
                   {Math.abs(metric.change)}%
                 </span>
                 <span className="text-muted-foreground">vs last month</span>

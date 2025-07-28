@@ -39,14 +39,14 @@ export function DonutChartCard({ data, title, description }: DonutChartCardProps
                   dataKey="value"
                 >
                   {data.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
+                    <Cell 
+                      key={`cell-${index}`} 
                       fill={COLORS[index % COLORS.length]}
                       className="hover:opacity-80 transition-opacity duration-200"
                     />
                   ))}
                 </Pie>
-                <Tooltip
+                <Tooltip 
                   contentStyle={{
                     backgroundColor: 'hsl(var(--background))',
                     border: '1px solid hsl(var(--border))',
@@ -54,7 +54,7 @@ export function DonutChartCard({ data, title, description }: DonutChartCardProps
                     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
                   }}
                 />
-                <Legend
+                <Legend 
                   verticalAlign="bottom"
                   height={36}
                   iconType="circle"

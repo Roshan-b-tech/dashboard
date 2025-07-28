@@ -28,16 +28,16 @@ export function LineChartCard({ data, title, description }: LineChartCardProps) 
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" className="opacity-30" />
-                <XAxis
-                  dataKey="name"
+                <XAxis 
+                  dataKey="name" 
                   className="text-xs"
                   tick={{ fontSize: 12 }}
                 />
-                <YAxis
+                <YAxis 
                   className="text-xs"
                   tick={{ fontSize: 12 }}
                 />
-                <Tooltip
+                <Tooltip 
                   contentStyle={{
                     backgroundColor: 'hsl(var(--background))',
                     border: '1px solid hsl(var(--border))',
@@ -46,28 +46,28 @@ export function LineChartCard({ data, title, description }: LineChartCardProps) 
                   }}
                 />
                 <Legend />
-                <Line
-                  type="monotone"
-                  dataKey="revenue"
-                  stroke="#F64C67"
+                <Line 
+                  type="monotone" 
+                  dataKey="revenue" 
+                  stroke="#F64C67" 
                   strokeWidth={3}
                   dot={{ fill: '#F64C67', strokeWidth: 2, r: 4 }}
                   activeDot={{ r: 6, stroke: '#F64C67', strokeWidth: 2 }}
                   name="Revenue ($)"
                 />
-                <Line
-                  type="monotone"
-                  dataKey="users"
-                  stroke="#8b5cf6"
+                <Line 
+                  type="monotone" 
+                  dataKey="users" 
+                  stroke="#8b5cf6" 
                   strokeWidth={3}
                   dot={{ fill: '#8b5cf6', strokeWidth: 2, r: 4 }}
                   activeDot={{ r: 6, stroke: '#8b5cf6', strokeWidth: 2 }}
                   name="Users"
                 />
-                <Line
-                  type="monotone"
-                  dataKey="conversions"
-                  stroke="#06b6d4"
+                <Line 
+                  type="monotone" 
+                  dataKey="conversions" 
+                  stroke="#06b6d4" 
                   strokeWidth={3}
                   dot={{ fill: '#06b6d4', strokeWidth: 2, r: 4 }}
                   activeDot={{ r: 6, stroke: '#06b6d4', strokeWidth: 2 }}

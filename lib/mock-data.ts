@@ -75,7 +75,7 @@ export const mockTableData: TableData[] = [
     conversions: 124,
     ctr: 3.2,
     status: 'active',
-    date: `${yyyy}-${mm}-01`
+    date: '2019-06-01'
   },
   {
     id: '2',
@@ -85,7 +85,7 @@ export const mockTableData: TableData[] = [
     conversions: 89,
     ctr: 2.8,
     status: 'active',
-    date: `${yyyy}-${mm}-02`
+    date: '2020-07-02'
   },
   {
     id: '3',
@@ -95,7 +95,7 @@ export const mockTableData: TableData[] = [
     conversions: 187,
     ctr: 4.1,
     status: 'completed',
-    date: `${yyyy}-${mm}-03`
+    date: '2021-08-03'
   },
   {
     id: '4',
@@ -105,7 +105,7 @@ export const mockTableData: TableData[] = [
     conversions: 156,
     ctr: 3.7,
     status: 'paused',
-    date: `${yyyy}-${mm}-04`
+    date: '2022-09-04'
   },
   {
     id: '5',
@@ -115,7 +115,7 @@ export const mockTableData: TableData[] = [
     conversions: 98,
     ctr: 2.9,
     status: 'active',
-    date: `${yyyy}-${mm}-05`
+    date: '2023-10-05'
   },
   {
     id: '6',
@@ -125,7 +125,7 @@ export const mockTableData: TableData[] = [
     conversions: 110,
     ctr: 3.5,
     status: 'active',
-    date: `${yyyy}-${mm}-06`
+    date: '2024-11-06'
   },
   {
     id: '7',
@@ -135,7 +135,7 @@ export const mockTableData: TableData[] = [
     conversions: 120,
     ctr: 3.1,
     status: 'completed',
-    date: `${yyyy}-${mm}-07`
+    date: '2025-12-07'
   },
   {
     id: '8',
@@ -145,7 +145,7 @@ export const mockTableData: TableData[] = [
     conversions: 130,
     ctr: 3.8,
     status: 'paused',
-    date: `${yyyy}-${mm}-08`
+    date: '2026-01-08'
   },
   {
     id: '9',
@@ -155,7 +155,7 @@ export const mockTableData: TableData[] = [
     conversions: 105,
     ctr: 2.7,
     status: 'active',
-    date: `${yyyy}-${mm}-09`
+    date: '2027-02-09'
   },
   {
     id: '10',
@@ -165,7 +165,7 @@ export const mockTableData: TableData[] = [
     conversions: 200,
     ctr: 5.0,
     status: 'completed',
-    date: `${yyyy}-${mm}-10`
+    date: '2028-03-10'
   },
   {
     id: '11',
@@ -175,7 +175,7 @@ export const mockTableData: TableData[] = [
     conversions: 170,
     ctr: 4.5,
     status: 'active',
-    date: `${yyyy}-${mm}-11`
+    date: '2029-04-11'
   },
   {
     id: '12',
@@ -185,7 +185,7 @@ export const mockTableData: TableData[] = [
     conversions: 140,
     ctr: 3.9,
     status: 'paused',
-    date: `${yyyy}-${mm}-12`
+    date: '2030-05-12'
   },
   {
     id: '13',
@@ -195,7 +195,7 @@ export const mockTableData: TableData[] = [
     conversions: 90,
     ctr: 2.5,
     status: 'active',
-    date: `${yyyy}-${mm}-13`
+    date: '2031-06-13'
   },
   {
     id: '14',
@@ -205,7 +205,7 @@ export const mockTableData: TableData[] = [
     conversions: 160,
     ctr: 4.2,
     status: 'completed',
-    date: `${yyyy}-${mm}-14`
+    date: '2032-07-14'
   },
   {
     id: '15',
@@ -215,7 +215,7 @@ export const mockTableData: TableData[] = [
     conversions: 150,
     ctr: 3.6,
     status: 'active',
-    date: `${yyyy}-${mm}-15`
+    date: '2033-08-15'
   }
 ];
 

@@ -65,8 +65,8 @@ export function BarChartCard({ data, title, description }: BarChartCardProps) {
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--muted-foreground) / 0.2)" />
-                <XAxis
-                  dataKey="name"
+                <XAxis 
+                  dataKey="name" 
                   className="text-xs"
                   tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
                   angle={-45}
@@ -75,13 +75,13 @@ export function BarChartCard({ data, title, description }: BarChartCardProps) {
                   axisLine={{ stroke: 'hsl(var(--muted-foreground) / 0.2)' }}
                   tickLine={false}
                 />
-                <YAxis
+                <YAxis 
                   className="text-xs"
                   tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
                   axisLine={{ stroke: 'hsl(var(--muted-foreground) / 0.2)' }}
                   tickLine={false}
                 />
-                <Tooltip
+                <Tooltip 
                   contentStyle={{
                     backgroundColor: 'hsl(var(--background))',
                     border: '1px solid hsl(var(--accent))',
@@ -91,8 +91,8 @@ export function BarChartCard({ data, title, description }: BarChartCardProps) {
                   }}
                   cursor={{ fill: 'hsl(var(--accent) / 0.1)' }}
                 />
-                <Bar
-                  dataKey="value"
+                <Bar 
+                  dataKey="value" 
                   fill={`url(#${gradientId})`}
                   radius={[12, 12, 0, 0]}
                   isAnimationActive={true}
