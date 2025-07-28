@@ -8,10 +8,6 @@ import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { DateRange } from "react-date-range";
-import { addDays } from "date-fns";
-import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css";
 import { Avatar } from "@/components/ui/avatar";
 
 // AccentColorPicker component

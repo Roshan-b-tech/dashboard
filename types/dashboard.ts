@@ -7,14 +7,13 @@ export interface MetricCard {
   color: string;
 }
 
-export interface ChartData {
+export type ChartData = {
   name: string;
-  value: number;
-  date?: string;
+  value?: number;
   revenue?: number;
   users?: number;
   conversions?: number;
-}
+};
 
 export interface TableData {
   id: string;
